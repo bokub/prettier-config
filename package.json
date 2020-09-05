@@ -1,0 +1,21 @@
+{
+    "name": "@bokub/prettier-config",
+    "version": "1.0.1",
+    "description": "bokub's favorite prettier config",
+    "author": "bokub",
+    "license": "MIT",
+    "scripts": {
+        "pub": "npm publish --access=public"
+    },
+    "main": "index.json",
+    "files": [
+        "package.json",
+        "index.json",
+        "README.md"
+    ],
+    "prettier": {
+        "singleQuote": true,
+        "tabWidth": 4,
+        "printWidth": 120
+    }
+}
