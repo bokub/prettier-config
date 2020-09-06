@@ -7,7 +7,7 @@
 **Install**:
 
 ```bash
-$ npm i -D @bokub/prettier-config
+npm i -D prettier @bokub/prettier-config
 ```
 
 **Edit `package.json`**:
