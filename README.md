@@ -10,11 +10,13 @@
 npm i -D prettier @bokub/prettier-config
 ```
 
-**Edit `package.json`**:
+**Add the following to your `package.json`**:
 
 ```jsonc
 {
-    // ...
+    "scripts": {
+        "prettier": "prettier --write **/*.{js,ts,json,html,md,yml}"
+    },
     "prettier": "@bokub/prettier-config"
 }
 ```
