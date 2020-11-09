@@ -7,7 +7,7 @@
 **Install**:
 
 ```bash
-npm i -D prettier @bokub/prettier-config
+npm i -D prettier pretty-quick husky @bokub/prettier-config
 ```
 
 **Add the following to your `package.json`**:
@@ -15,7 +15,12 @@ npm i -D prettier @bokub/prettier-config
 ```jsonc
 {
     "scripts": {
-        "prettier": "prettier --write **/*.{js,ts,json,html,md,yml}"
+        "pretty-quick": "pretty-quick"
+    },
+    "husky": {
+        "hooks": {
+            "pre-commit": "pretty-quick --staged"
+        }
     },
     "prettier": "@bokub/prettier-config"
 }
