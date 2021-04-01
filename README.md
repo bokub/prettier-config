@@ -1,31 +1,39 @@
 # @bokub / prettier-config
 
-> My personal [Prettier](https://prettier.io) config.
+[![Code style][style-src]][style-href]
+[![Downloads][downloads-src]][downloads-href]
 
-## Usage
+> My personal [Prettier](https://prettier.io) config / workflow
 
-**Install**:
+#### Install
 
 ```bash
-# Just the config
-npm i -D @bokub/prettier-config
-
-# Whole package
-npm i -D prettier pretty-quick husky @bokub/prettier-config
+npm i -D prettier @bokub/prettier-config
 ```
 
-**Add the following to your `package.json`**:
+#### Add the following to your `package.json`:
 
-```jsonc
+```json
 {
-    "scripts": {
-        "pretty-quick": "pretty-quick"
-    },
-    "husky": {
-        "hooks": {
-            "pre-commit": "pretty-quick --staged"
-        }
-    },
-    "prettier": "@bokub/prettier-config"
+  "prettier": "@bokub/prettier-config"
 }
 ```
+
+#### _Optional:_ Setup pre-commit hook
+
+```bash
+npx husky-init
+npm i -D pretty-quick
+npx husky set .husky/pre-commit 'pretty-quick --staged'
+```
+
+#### _Optional:_ Run prettier on old code
+
+```bash
+npx prettier --write .
+```
+
+[style-src]: https://flat.badgen.net/badge/code%20style/prettier/ff69b4
+[style-href]: https://github.com/prettier/prettier
+[downloads-src]: https://flat.badgen.net/npm/dt/@bokub/prettier-config
+[downloads-href]: https://www.npmjs.com/package/@bokub/prettier-config

@@ -1,19 +1,19 @@
 {
-    "name": "@bokub/prettier-config",
-    "version": "2.0.0",
-    "description": "bokub's favorite prettier config",
-    "author": "bokub",
-    "license": "MIT",
-    "homepage": "https://github.com/bokub/prettier-config",
-    "main": "index.json",
-    "files": [
-        "package.json",
-        "index.json",
-        "README.md"
-    ],
-    "keywords": [
-        "prettier",
-        "config",
-        "prettier-config"
-    ]
+  "name": "@bokub/prettier-config",
+  "version": "2.0.1",
+  "description": "bokub's favorite prettier config",
+  "author": "bokub",
+  "license": "MIT",
+  "homepage": "https://github.com/bokub/prettier-config",
+  "main": "index.json",
+  "files": [
+    "package.json",
+    "index.json",
+    "README.md"
+  ],
+  "keywords": [
+    "prettier",
+    "config",
+    "prettier-config"
+  ]
 }
