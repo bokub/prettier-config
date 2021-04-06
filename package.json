@@ -1,11 +1,14 @@
 {
   "name": "@bokub/prettier-config",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "bokub's favorite prettier config",
   "author": "bokub",
   "license": "MIT",
   "homepage": "https://github.com/bokub/prettier-config",
   "main": "index.json",
+  "scripts": {
+    "prettier": "npx prettier --write --config index.json ."
+  },
   "files": [
     "package.json",
     "index.json",
