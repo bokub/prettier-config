@@ -24,7 +24,7 @@ npm i -D prettier @bokub/prettier-config
 ```bash
 npx husky-init
 npm i -D pretty-quick
-npx husky set .husky/pre-commit 'pretty-quick --staged'
+npx husky set .husky/pre-commit "npx pretty-quick --staged"
 ```
 
 #### _Optional:_ Run prettier on old code
