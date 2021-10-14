@@ -48,10 +48,10 @@ npx prettier --write .
 
 ```bash
 # With npm
-npm i -D eslint-config-prettier eslint-plugin-prettier eslint@latest
+npm i -D eslint-config-prettier eslint-plugin-prettier eslint@^7.0.0
 
 # With yarn
-yarn add -D eslint-config-prettier eslint-plugin-prettier eslint@latest
+yarn add -D eslint-config-prettier eslint-plugin-prettier eslint@^7.0.0
 ```
 
 Then, edit your ESLint configuration file:
