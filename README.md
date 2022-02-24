@@ -1,10 +1,15 @@
-# @bokub / prettier-config
+![@bokub/prettier-config](https://user-images.githubusercontent.com/17952318/155517136-be39b194-d0ef-4fd6-8c47-dfef2de50a3e.png)
 
-[![Code style][style-src]][style-href]
-[![Downloads][downloads-src]][downloads-href]
-[![Version][version-src]][version-href]
-
-> My personal [Prettier](https://prettier.io) config / workflow
+<h2>
+<p align="center">
+  My personal <a href="https://prettier.io">Prettier</a> config & workflow
+</p>
+  <p align="center">
+  <a href="https://github.com/prettier/prettier"><img src="https://flat.badgen.net/badge/code%20style/prettier/ff69b4" alt="Code style"></a>
+  <a href="https://www.npmjs.com/package/@bokub/prettier-config"><img src="https://flat.badgen.net/npm/dt/@bokub/prettier-config" alt="Downloads"></a>
+  <a href="https://www.npmjs.com/package/@bokub/prettier-config"><img src="https://runkit.io/bokub/npm-version/branches/master/@bokub/prettier-config?style=flat" alt="Version"></a>
+  </p>
+</h2>
 
 #### Install
 
@@ -65,10 +70,3 @@ Then, edit your ESLint configuration file:
   }
 }
 ```
-
-[style-src]: https://flat.badgen.net/badge/code%20style/prettier/ff69b4
-[style-href]: https://github.com/prettier/prettier
-[downloads-src]: https://flat.badgen.net/npm/dt/@bokub/prettier-config
-[downloads-href]: https://www.npmjs.com/package/@bokub/prettier-config
-[version-src]: https://runkit.io/bokub/npm-version/branches/master/@bokub/prettier-config?style=flat
-[version-href]: https://www.npmjs.com/package/@bokub/prettier-config
