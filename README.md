@@ -32,15 +32,7 @@ yarn add -D prettier @bokub/prettier-config
 #### _Optional:_ Setup pre-commit hook with husky
 
 ```bash
-# With npm
-npx husky-init
-npm i -D pretty-quick
-npx husky set .husky/pre-commit "npx pretty-quick --staged"
-
-# With yarn
-npx husky-init # add --yarn2 for Yarn 2
-yarn add -D pretty-quick
-yarn husky set .husky/pre-commit "npx pretty-quick --staged"
+npx mrm@2 lint-staged
 ```
 
 #### _Optional:_ Run prettier on existing code
