@@ -33,6 +33,15 @@ yarn add -D prettier @bokub/prettier-config
 
 ```bash
 npx mrm@2 lint-staged
+npx husky set .husky/pre-commit "npx lint-staged --concurrent false"
+```
+
+Then, in `package.json`, replace the `lint-staged` config with:
+
+```json
+"lint-staged": {
+  "*": "prettier --write --ignore-unknown"
+}
 ```
 
 #### _Optional:_ Run prettier on existing code
@@ -45,10 +54,10 @@ npx prettier --write .
 
 ```bash
 # With npm
-npm i -D eslint-config-prettier eslint-plugin-prettier eslint@^7.0.0
+npm i -D eslint-config-prettier eslint-plugin-prettier eslint
 
 # With yarn
-yarn add -D eslint-config-prettier eslint-plugin-prettier eslint@^7.0.0
+yarn add -D eslint-config-prettier eslint-plugin-prettier eslint
 ```
 
 Then, edit your ESLint configuration file:
@@ -61,4 +70,13 @@ Then, edit your ESLint configuration file:
     "prettier/prettier": "warn" // Optionally, you can set the error level to warn
   }
 }
+```
+
+Then, in `package.json`, replace the `lint-staged` config (if it exists) with:
+
+```json
+  "lint-staged": {
+    "*": "prettier --write --ignore-unknown",
+    "*.{js,ts,vue}": "eslint --fix"
+  }
 ```
