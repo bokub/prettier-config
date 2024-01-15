@@ -11,7 +11,9 @@
   </p>
 </h2>
 
-#### Install
+#### Base setup
+
+Install required packages:
 
 ```bash
 # With npm
@@ -21,27 +23,31 @@ npm i -D prettier @bokub/prettier-config
 yarn add -D prettier @bokub/prettier-config
 ```
 
-#### Add the following to your `package.json`:
-
-```json
-{
-  "prettier": "@bokub/prettier-config"
-}
-```
-
-#### _Optional:_ Setup pre-commit hook with husky
+Add the config to your `package.json`:
 
 ```bash
-npx mrm@2 lint-staged
-npx husky set .husky/pre-commit "npx lint-staged --concurrent false"
+npm pkg set prettier="@bokub/prettier-config"
 ```
 
-Then, in `package.json`, replace the `lint-staged` config with:
+#### _Optional:_ Setup pre-commit hook with husky & lint-staged
 
-```json
-"lint-staged": {
-  "*": "prettier --write --ignore-unknown"
-}
+Install husky & lint-staged:
+
+```bash
+# With npm
+npm i -D husky lint-staged
+
+# With yarn
+yarn add -D husky lint-staged
+```
+
+Setup git hook:
+
+```bash
+npm pkg set scripts.prepare="husky install"
+npx husky install
+npx husky set .husky/pre-commit "npx lint-staged --concurrent false"
+npm pkg set "lint-staged.*"="prettier --write --ignore-unknown"
 ```
 
 #### _Optional:_ Run prettier on existing code
@@ -67,16 +73,13 @@ Then, edit your ESLint configuration file:
   "plugins": ["prettier"],
   "extends": ["<some-config>", "plugin:prettier/recommended"], // Add to the end of the array
   "rules": {
-    "prettier/prettier": "warn" // Optionally, you can set the error level to warn
-  }
+    "prettier/prettier": "warn", // Optionally, you can set the error level to warn
+  },
 }
 ```
 
-Then, in `package.json`, replace the `lint-staged` config (if it exists) with:
+If you have a `lint-staged` configuration, add an ESLint task :
 
-```json
-  "lint-staged": {
-    "*": "prettier --write --ignore-unknown",
-    "*.{js,ts,vue}": "eslint --fix"
-  }
+```bash
+npm pkg set "lint-staged[*.{js,ts,vue}]"="eslint --fix"
 ```
