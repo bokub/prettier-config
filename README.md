@@ -46,7 +46,7 @@ Setup git hook:
 ```bash
 npm pkg set scripts.prepare="husky install"
 npx husky install
-npx husky set .husky/pre-commit "npx lint-staged --concurrent false"
+echo "npx lint-staged --concurrent false" > .husky/pre-commit
 npm pkg set "lint-staged.*"="prettier --write --ignore-unknown"
 ```
 
