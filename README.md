@@ -44,8 +44,7 @@ yarn add -D husky lint-staged
 Setup git hook:
 
 ```bash
-npm pkg set scripts.prepare="husky install"
-npx husky install
+npx husky init
 echo "npx lint-staged --concurrent false" > .husky/pre-commit
 npm pkg set "lint-staged.*"="prettier --write --ignore-unknown"
 ```
