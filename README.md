@@ -7,7 +7,7 @@
   <p align="center">
   <a href="https://github.com/prettier/prettier"><img src="https://flat.badgen.net/badge/code%20style/prettier/ff69b4" alt="Code style"></a>
   <a href="https://www.npmjs.com/package/@bokub/prettier-config"><img src="https://flat.badgen.net/npm/dt/@bokub/prettier-config" alt="Downloads"></a>
-  <a href="https://www.npmjs.com/package/@bokub/prettier-config"><img src="https://runkit.io/bokub/npm-version/branches/master/@bokub/prettier-config?style=flat" alt="Version"></a>
+  <a href="https://www.npmjs.com/package/@bokub/prettier-config"><img src="https://gradgen.bokub.workers.dev/npm/v/@bokub/prettier-config?gradient=b65cff,11cbfa&style=flat&label=version" alt="Version"></a>
   </p>
 </h2>
 
