@@ -5,6 +5,13 @@
   "author": "bokub",
   "license": "MIT",
   "homepage": "https://github.com/bokub/prettier-config",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bokub/prettier-config.git"
+  },
+  "bugs": {
+    "url": "https://github.com/bokub/prettier-config/issues"
+  },
   "main": "index.json",
   "scripts": {
     "prettier": "npx prettier --write --config index.json ."
