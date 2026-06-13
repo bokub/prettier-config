@@ -1,6 +1,9 @@
 {
   "name": "@bokub/prettier-config",
   "version": "2.1.0",
+  "bugs": {
+    "url": "https://github.com/bokub/prettier-config/issues"
+  },
   "description": "bokub's favorite prettier config",
   "author": "bokub",
   "license": "MIT",
